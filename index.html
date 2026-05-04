@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timed Typing Test App</title>
-    <script src="script.js" async></script>
+     <script src="script.js" async></script>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,10 +33,22 @@
                 </section>
 
                 <button id="reset">Start over</button>
+
+                <div class="metrics">
+                    <span id="wpm">0 WPM</span>
+                    <span id="errors">Errors: 0</span>
+                </div>
             </div><!-- .meta -->
         </section><!-- .test-area -->
+
+        <section class="scoreboard">
+            <h2>Top 3 Fastest Times</h2>
+            <ol id="scorelist"></ol>
+        </section>
+        <!-- for hard reset on the leaderboard localStorage.removeItem("topScores") --> 
     </main>
 
+   
 </body>
 
 </html>
